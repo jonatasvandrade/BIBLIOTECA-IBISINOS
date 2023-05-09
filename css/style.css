@@ -1,0 +1,882 @@
+body{
+	background:url(../imagens/noise2.png) repeat;
+	font-size:13px;
+	color:#333;
+	padding:0;
+}
+
+button:focus{outline:none;}
+select:focus{outline:none;}
+
+#container{
+	width:1000px;
+	height:auto;
+	margin:auto;
+	background:url(../imagens/bg2.png) repeat;
+	border:solid 1px #CCC;
+	margin-top:-8px;
+	margin-bottom:30px;
+	padding:5px 20px 0 20px;
+	border-radius:5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+}
+
+#container_login{
+	width:380px;
+	height:auto;
+	overflow:hidden;
+	margin:auto;
+	background:url(../imagens/bg2.png) repeat;
+	border:solid 1px #CCC;
+	margin-top:68px;
+	margin-bottom:30px;
+	padding:44px 20px 0 20px;
+	border-radius:5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+}
+
+#container_login .login_form{
+	height:auto;
+	overflow:hidden;
+	margin-bottom:60px;
+}
+
+.esqueci_senha{
+	float:left;
+	margin-top:16px;
+}
+
+#menu{
+	width:100%;
+	height:55px;
+	padding-top:10px;
+	margin-top: -20px;
+	border-top: solid 3px #E0E0E0;
+	border-bottom: solid 1px #E0E0E0;
+	background:#FFF;
+	z-index:99999;
+}
+
+#menu .cont_menu{
+	width:980px;
+	margin:auto;
+}
+
+#menu .logo{
+	float:left;
+	width:60px;
+	height:40px;
+	margin-top:2px;
+}
+
+#menu .logo_login{
+	width:257px;
+	height:59px;
+	margin:auto;
+	margin-top:-6px;
+	overflow:hidden;
+}
+
+.table-hover thead tr th {
+	background-color: #E7E7E7;
+}
+
+.table-hover tbody tr td {
+	background-color: #FFF;
+}
+
+.table-hover tbody tr:hover td {
+	background-color: #F7F7F7;
+}
+
+.table-bordered {
+	border: 1px solid #CCC;
+	border-left: 0;
+}
+.table-bordered th,
+.table-bordered td {
+	border-left: 1px solid #CCC;
+}
+
+.table .table-check {
+	margin-top:-2px;
+}
+
+.breadcrumb {
+	padding: 8px 15px;
+	margin: 0 0 20px;
+	list-style: none;
+	background-color: #f5f5f5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 1px #CCC;
+}
+
+hr {
+	margin: 0 0 0 0;
+	border: 0;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #ffffff;
+}
+
+h2{
+	font-size:26px;
+}
+
+.control-group {
+	margin-bottom:0px;
+}
+
+.bloco{
+	background:#F1F1F1;
+	border:solid 1px #CCC;
+	border-radius:5px;
+	margin-right:20px;
+}
+
+.hidden{
+	display:none;
+}
+
+#numero_registros{
+	position:absolute;
+	width:150px;
+	text-align:right;
+	font-size:12px;
+	left:50%;
+	margin-top:2px;
+	margin-left:317px;
+}
+
+#box_filtrar{
+	padding-top:0px;
+}
+
+.filtro_item{
+	float:left;
+	margin-right:15px;
+	margin-bottom:20px;
+}
+
+.filtro_item_last{
+	float:left;
+	margin-bottom:15px;
+}
+
+
+.dash_pizza{
+	width:600px;
+	height:210px;
+	padding:10px 22px 22px 10px;
+}
+
+.dash_barras{
+	width:600px;
+	height:200px;
+	padding:10px 22px 22px 10px;
+}
+
+.dash_veloc{
+	width:377px;
+	height:125px;
+	padding:20px;
+	margin-left:20px;
+}
+
+.dash_linhas1{
+	width:458px;
+}
+
+.dash_linhas2{
+	width:458px;
+	margin-left:20px;
+}
+
+.dash_linhas3{
+	width:100%;
+	height:400px;
+}
+
+.label_radio{
+	float:left;
+	margin-left:7px;
+	padding-top:2px;
+}
+
+.val_erro{
+	color:#B94A48;
+}
+
+.modal-body{
+	background:#fff;	
+}
+
+
+/**/
+
+#papel{
+	width:995px;
+	height:auto;
+	background:#FFF;
+	margin:auto;
+	margin-bottom:5px;
+}
+
+#papel .cabecalho{
+	width:99.5%;
+	height:59px;
+	border:solid 1px #999;
+	padding:10px 0 10px 0;
+}
+
+#papel .logotipo{
+	width:332px;
+	height:97px;
+	float:left;
+	margin-left:10px;
+}
+
+#papel .titulo{
+	position:absolute;
+	left:50%;
+	margin-left:-53px;
+	margin-top:20px;
+	font-size:16px;
+	font-weight:bold;
+	width:105px;
+}
+
+#papel .titulo_agenda{
+	position:absolute;
+	left:50%;
+	margin-left:-33px;
+	margin-top:20px;
+	font-size:16px;
+	font-weight:bold;
+	width:105px;
+}
+
+#papel .data{
+	float:right;
+	font-size:12px;
+	margin-top:-2px;
+	margin-right:20px;
+	text-align:right;
+}
+
+#papel .data .numero{
+	font-size:16px;
+	margin-bottom:5px;
+	padding:0;
+}
+
+#papel .informacoes{
+	width:99.5%;
+	height:110px;
+	font-size:14px;
+	border:solid 1px #999;
+	padding:10px 0 10px 0;
+}
+
+#papel .informacoes .info{
+	width:75px;
+	font-size:14px;
+	margin-bottom:10px;
+	margin-right:5px;
+	text-align:right;
+	float:left;
+}
+
+#papel .informacoes .desc{
+	width:750px;
+	float:left;
+	font-size:14px;
+	margin-bottom:10px;
+	font-weight:bold;
+	border-bottom:dotted 1px #999;
+}
+
+#papel .informacoes .pequena{
+	width:325px;
+}
+
+#papel .informacoes .direita{
+	margin-right:20px;
+}
+
+#papel .servicos{
+	width:99.5%;
+	height:auto;
+	font-size:14px;
+	border:solid 1px #999;
+	margin-top:10px;
+}
+
+#papel .servicos ul{
+	position:relative;
+	width:100%;
+	height:auto;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#papel .servicos li{
+	position:relative;
+	width:100%;
+	padding:3px 0 0 3px;
+}
+
+#papel .servicos .grid{
+	position:relative;
+	float:left;
+	border-top:solid 1px #999;
+	padding:3px 0 3px 0;
+	margin:0;
+}
+
+#papel .servicos .grid_ultimo{
+	position:relative;
+	float:left;
+	border-bottom:solid 1px #999;
+	padding:3px 0 3px 0;
+	margin:0;
+}
+
+#papel .servicos .grid_ultimo_agenda{
+	position:relative;
+	float:left;
+	border-bottom:none;
+	padding:3px 0 3px 0;
+	margin:0;
+}
+
+#papel .servicos .cabec{
+	font-weight:bold;
+	background:#E0E0E0;
+	border-top:none;
+	border-bottom:none;
+}
+
+/**/
+
+#papel .agendas{
+	width:99.5%;
+	height:auto;
+	font-size:14px;
+	/*border:solid 1px #999;*/
+	margin-top:10px;
+}
+
+#papel .agendas ul{
+	position:relative;
+	width:100%;
+	height:auto;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#papel .agendas li{
+	position:relative;
+	width:100%;
+	padding:3px 0 0 3px;
+}
+
+#papel .agendas .grid{
+	position:relative;
+	float:left;
+	border:none;
+	padding:3px 0 3px 0;
+	margin:0;
+	/*line-height:12px;*/
+}
+
+#papel .agendas .grid_ultimo{
+	position:relative;
+	float:left;
+	border-bottom:solid 1px #999;
+	padding:3px 0 3px 0;
+	margin:0;
+}
+
+#papel .agendas .grid_ultimo_agenda{
+	position:relative;
+	float:left;
+	border-bottom:none;
+	padding:3px 0 3px 0;
+	margin:0;
+}
+
+#papel .agendas .cabec{
+	font-weight:bold;
+	background:#C9C9C9;
+	border-top:solid 1px #999;
+	border-bottom:solid 1px #999;
+}
+
+#papel .agendas .subcab{
+	font-weight:bold;
+	background:#EEEEEE;
+	border-top:solid 1px #999;
+	border-bottom:solid 1px #999;
+}
+
+
+/**/
+
+#papel .servicos .pvalidade{
+	position:relative;
+	width:50%;
+	font-weight:normal;
+}
+
+#papel .servicos .ptotal{
+	position:relative;
+	width:49%;
+	text-align:right;
+	font-weight:normal;
+}
+
+#papel .servicos .ptotal_label{
+	position:relative;
+	width:50%;
+	font-weight:normal;
+	border:none;
+}
+
+#papel .servicos .ptotal_valor{
+	position:relative;
+	width:49%;
+	text-align:right;
+	font-weight:normal;
+	border:none;
+}
+
+#papel .servicos .gdesc{ width:53%; border-right:solid 1px #999; }
+#papel .servicos .guti{ width:10%; border-right:solid 1px #999; text-align:right; }
+#papel .servicos .gqtd{ width:12%; border-right:solid 1px #999; text-align:right; }
+#papel .servicos .gunit{ width:12%; border-right:solid 1px #999; text-align:right; }
+#papel .servicos .gtotal{ width:12%; text-align:right; }
+
+#papel .parcelamento{
+	width:99.5%;
+	height:20px;
+	font-size:14px;
+	border:solid 1px #999;
+	padding:10px 0 10px 0;
+	margin-top:10px;
+}
+
+#papel .parcelamento .forma_pagto{
+	float:left;
+}
+
+#papel .parcelamento .parcelas{
+	float:right;
+}
+
+#papel .parcelas_valor{
+	font-weight:bold;
+}
+
+#papel .assinatura{
+	width:99.5%;
+}
+
+#papel .sign{
+	width:200px;
+	border-top:solid 1px #999;
+	text-align:center;
+	font-size:14px;
+	float:right;
+	margin-top:70px;
+}
+
+#rodape_filial{
+	width:100%;
+	font-family:Tahoma, Geneva, sans-serif;
+	background:#FFF;
+	font-size:12px;
+	color:#666;
+	float:left;
+	margin:0;
+	height:65px;
+}
+
+#papel .descontos{
+	width:99.5%;
+	height:50px;
+	font-size:14px;
+	border:solid 1px #999;
+	padding:10px 0 10px 0;
+	margin-top:10px;
+}
+
+#papel .valor_pagar{
+	font-weight:bold;
+}
+
+#papel .descontos .desc_titulo{
+	font-weight:normal;
+	margin-left:5px;
+	float:left;
+}
+
+#papel .desc_entrada_titulo{
+	font-weight:bold;
+	margin-left:5px;
+	float:left;
+}
+
+#papel .descontos .desc_desconto{
+	font-weight:normal;
+	margin-right:5px;
+	text-align:right;
+	float:right;
+}
+
+#papel .descontos .desc{
+	width:99%;
+	margin:auto;
+	border-bottom:solid 1px #999;
+	height:25px;
+	margin-bottom:7px;
+}
+
+#papel .descontos .desc_total_titulo{
+	font-weight:bold;
+	margin-left:10px;
+	float:left;
+}
+
+#papel .descontos .desc_total_desconto{
+	font-weight:bold;
+	margin-right:10px;
+	text-align:right;
+	float:right;
+}
+
+#papel .descontos .desc_saldo_titulo{
+	font-weight:bold;
+	margin-left:10px;
+	float:left;
+}
+
+#papel .descontos .desc_saldo_desconto{
+	font-weight:normal;
+	margin-right:10px;
+	text-align:right;
+	float:right;
+}
+
+#papel .pagamentos{
+	width:99.5%;
+	height:50px;
+	font-size:14px;
+	border:solid 1px #999;
+	padding:10px 0 10px 0;
+	margin-top:10px;
+}
+
+#papel .pagamentos .pagto{
+	width:99%;
+	margin:auto;
+	border-bottom:solid 1px #999;
+	height:25px;
+	margin-bottom:7px;
+}
+
+#papel .pagamentos .pagto_titulo{
+	font-weight:normal;
+	margin-left:5px;
+	float:left;
+	width:301px;
+}
+
+#papel .pagamentos .pagto_valor{
+	font-weight:normal;
+	margin-right:5px;
+	text-align:right;
+	float:right;
+}
+
+#papel .pagamentos .pagto_saldo_titulo{
+	font-weight:normal;
+	margin-left:10px;
+	float:left;
+	width:300px;
+}
+
+#papel .pagamentos .pagto_forma{
+	font-weight:normal;
+	margin-left:10px;
+	float:left;
+}
+
+#papel .pagamentos .pagto_saldo_valor{
+	font-weight:normal;
+	margin-right:10px;
+	text-align:right;
+	float:right;
+}
+
+#papel .pagamentos .pagto_neg{
+	font-weight:bold;
+}
+
+#tb_agendas{
+	font-size:14px;
+	width:99.5%;
+	text-align:left;
+	line-height:23px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+#tb_agendas_titulos{
+	font-size:14px;
+	width:99.5%;
+	text-align:left;
+	line-height:23px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	border:solid 1px #999;
+	margin-bottom:10px;
+}
+
+.tb_agendas_repete{
+	font-size:14px;
+	width:99.5%;
+	text-align:left;
+	line-height:23px;
+	color:#666;
+	
+	border:solid 1px #999;
+}
+
+#orcamentos{
+	width:99.5%;	
+}
+
+/*-------------------------------*/
+/*---------CONTRATOS-------------*/
+/*-------------------------------*/
+#contrato{
+	width:803px;
+	height:auto;
+	background:#FFF;
+	margin:auto;
+	padding:25px;
+	margin-top:20px;
+}
+
+#contrato .topo{
+	width:100%;
+	text-align:center;
+	padding-bottom:30px;
+}
+
+#contrato .titulo{
+	font-size:16px;
+	font-weight:bold;	
+}
+
+#contrato .identificacao{
+	font-size:16px;
+}
+
+#contrato .informacoes{
+	width:100%;
+}
+
+#contrato .clausula_titulo{
+	font-size:16px;
+	font-weight:bold;
+	padding-bottom:5px;	
+}
+
+#contrato .clausula_texto{
+	font-size:16px;
+	text-align:justify;
+	line-height:23px;
+	margin-bottom:25px;
+}
+
+#contrato .clausula_cliente{
+	font-size:16px;
+	margin-bottom:30px;
+}
+
+#contrato .clausula_final{
+	width:50%;
+	float:left;
+	font-size:16px;
+	text-align:center;
+	line-height:23px;
+	margin-bottom:50px;
+}
+
+#contrato .clausula_tabela{
+	width:100%;
+	border:solid 1px #333;
+	overflow:hidden;
+	margin-top:-20px;
+	margin-bottom:25px;
+}
+
+#contrato .clausula_tabela tr{
+	width:100%;
+}
+
+#contrato .clausula_tabela ul{
+	width:99%;
+	margin:auto;
+	margin-top:4px;
+	margin-bottom:4px;
+	list-style:none;
+	overflow:hidden;
+	padding:0;
+}
+
+#contrato .clausula_tabela li{
+	float:left;
+	line-height:25px;
+}
+
+#contrato .clausula_tabela .tabela_cabecalho{
+	background:#E9E9E9;
+}
+
+#contrato .clausula_tabela .servico_nome{
+	width:55%;
+}
+
+#contrato .clausula_tabela .servico_quantidade{
+	width:15%;
+	text-align:right;
+}
+
+#contrato .clausula_tabela .servico_unitario{
+	width:15%;
+	text-align:right;
+}
+
+#contrato .clausula_tabela .servico_total{
+	width:15%;
+	text-align:right;
+}
+
+/**/
+
+#contrato .clausula_tabela .comprovante_duplicata{
+	width:13%;
+}
+
+#contrato .clausula_tabela .comprovante_parcela{
+	width:12%;
+}
+
+#contrato .clausula_tabela .comprovante_vencimento{
+	width:13%;
+}
+
+#contrato .clausula_tabela .comprovante_valor{
+	width:12%;
+	text-align:right;
+}
+
+#contrato .clausula_tabela .comprovante_valor1{
+	width:11.8%;
+	text-align:right;
+	border-right:solid 1px #333;
+}
+
+#contrato .clausula_tabela .comprovante_valor2{
+	width:12%;
+	text-align:right;
+}
+
+/**/
+
+#contrato .clausula_tabela .proc_servico{
+	width:27%;
+}
+
+#contrato .clausula_tabela .proc_procedimento{
+	width:40%;
+}
+
+#contrato .clausula_tabela .proc_data{
+	width:15%;
+}
+
+#contrato .clausula_tabela .proc_assinatura{
+	width:18%;
+}
+
+/**/
+
+#contrato .assinaturas{
+	width:100%;
+	float:left;
+	margin-bottom:50px;
+	
+}
+
+#contrato .clausula_cliente ul{
+	width:100%;
+	overflow:hidden;
+	list-style:none;
+	margin:0;
+}
+
+#contrato .clausula_cliente li{
+	width:50%;
+	float:left;
+	line-height:25px;
+}
+
+#contrato .clausula_cliente .grande{
+	width:100%;
+}
+
+#contrato .paragrafo{
+	float:left;
+	width:30px;
+	height:10px;	
+}
+
+.thumb-imagens{
+	max-width:114px;
+	max-height:86px;	
+	
+}
+
+/*-------------------------------*/
+/*---------COMPROVANTE-------------*/
+/*-------------------------------*/
+
+
+.campo-form{
+	height:50px;
+	text-transform:uppercase;
+	margin-right: 20px;
+}
+
+.campo-form #estado{
+	width:50px;
+}
+
+.campo-form #cidade{
+	width:100px;
+}
+
+.campo-form #nome{
+	width:300px;
+}
+
+.campo-form #telefone{
+	width:100px;
+}
+
