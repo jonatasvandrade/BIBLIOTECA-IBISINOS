@@ -14,12 +14,13 @@ $ativo = $_REQUEST['ativo'];
 
 @$membros = new Membros($nome, $email, $telefone, $endereco, $cidade, $estado, $cpf, $ativo, $codigo);
 
-if($_REQUEST['codigo'] == ""){
-    $membros->verificaAtivo();
+$membros->verificaAtivo();
+
+
+if($codigo == ""){
     $membros->CadastraMembros();	
 }else{
-    
-    $membros->verificaAtivo();   
+      
     $membros->AtualizaMembro();
 }
 

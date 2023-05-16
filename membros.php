@@ -78,12 +78,13 @@ CriaConexao();
 			$email= $row['email'];
 			$cidade= $row['cidade'];
 			$endereco=$row['endereco'];
+			$cpf=$row['cpf'];
 			$ativo= $row['ativo'];
 			$estado= $row['estado'];
 			$excluir= $row['excluido'];
 			$telefone = $row['telefone'];
 			$codigo = $row['codigo_membro'];
-			echo "<tr><td width='25%'><a href='membros-form.php?codigo=".$codigo."'>".$nome."</a></td><td width='25%'>".$telefone."</td><td width='25%'>".$cidade."</td><td width='25%'>".$email."</td><tr>";
+			echo "<tr><td width='25%'><a href='membros-form.php?codigo=".$codigo."'>".$nome."</a></td><td width='25%'>".$telefone."</td><td width='25%'>".$cpf."</td><td width='25%'>".$email."</td><tr>";
 			$i++;
 		}		
 		?>

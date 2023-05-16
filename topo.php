@@ -3,6 +3,8 @@
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<script src="js/functions/funcoes.js"></script>
+<script src="js/functions/validadorCEP.js"></script>
 <html>	
    <head>
 <style>
@@ -145,8 +147,8 @@
 		-->
      
 
-      <script type="text/javascript" src="jquery/jquery.js"></script>
-     	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>     	<script src="bootstrap/js/bootstrap.min.js"></script>
       <script src="js/mascaras_validacoes.js"></script>
       <script src="js/bootstrap-datepicker.js"></script>
       <script src="js/funcoes.js"></script>

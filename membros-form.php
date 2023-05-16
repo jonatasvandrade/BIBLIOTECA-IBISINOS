@@ -27,6 +27,7 @@ require_once('conexao/conexao.php');
 			$nome = $row['nome'];
 			$email= $row['email'];
 			$cidade= $row['cidade'];
+			$cpf= $row['cpf'];
 			$endereco=$row['endereco'];
 			$ativo= $row['ativo'];
 			$estado= $row['estado'];
@@ -125,7 +126,7 @@ $("#validate-modal-alert").modal("hide").removeClass("hidden");
 	<div style="float:left;">
 		<label>Nome</label>
 		<div id="nome_div" class="">
-			<input type="text" maxlength="200" name="nome" id="nome" value="<?php echo $nome; ?>" onkeypress="digito('nome');" onkeydown="digito('nome');">
+			<input type="text" maxlength="100" name="nome" id="nome" value="<?php echo $nome; ?>" onkeypress="digito('nome');" onkeydown="digito('nome');">
 		</div>
 	</div>
    
@@ -134,48 +135,54 @@ $("#validate-modal-alert").modal("hide").removeClass("hidden");
    <div style="float:left;">
 		<label>E-mail</label>
 		<div id="email_div">
-			<input type="text" maxlength="200" name="email" class="campo-form"  id="email" value="<?php echo $email; ?>" onkeypress="digito('email');" onkeydown="digito('email');">
+			<input type="text" maxlength="50" name="email" class="campo-form" type="email"  id="email" value="<?php echo $email; ?>" onkeypress="digito('email');" onkeydown="digito('email');">
 		</div>
 	</div>
 	<div style="float:left;">
 		<label>Telefone</label>
-		<div id="email_div">
-			<input type="text" maxlength="200" name="telefone" class="campo-form"  id="telefone" value="<?php echo $telefone; ?>">
+		<div id="telefone_div">
+			<input type="text" name="telefone" class="campo-form"  id="telefone" onkeyup="handlePhone(event)" maxlength="15" value="<?php echo $telefone; ?>">
 		</div>
 	</div>
 	<div style="float:left;">
 		<label>Endereço</label>
 		<div id="endereco_div">
-			<input type="text" maxlength="200" name="endereco" class="campo-form"  id="endereco" value="<?php echo $endereco; ?>" onkeypress="digito('endereco');" onkeydown="digito('endereco');">
+			<input type="text" name="endereco" class="campo-form"  id="endereco" value="<?php echo $endereco; ?>" onkeypress="digito('endereco');" onkeydown="digito('endereco');">
 		</div>
 	</div>
 	<div style="float:left;">
 		<label>Bairro</label>
 		<div id="bairro_div">
-			<input type="text" maxlength="200" name="bairro" class="campo-form"  id="bairro" value="<?php echo @$bairro; ?>" onkeypress="digito('bairro');" onkeydown="digito('bairro');">
+			<input type="text" maxlength="50" name="bairro" class="campo-form"  id="bairro" value="<?php echo @$bairro; ?>" onkeypress="digito('bairro');" onkeydown="digito('bairro');">
 		</div>
 	</div>
 	<div style="float:left;">
 		<label>Cidade</label>
 		<div id="cidade_div">
-			<input type="text" maxlength="200" name="cidade" class="campo-form"  id="cidade" value="<?php echo $cidade; ?>" onkeypress="digito('cidade');" onkeydown="digito('cidade');">
+			<input type="text" maxlength="50" name="cidade" class="campo-form"  id="cidade" value="<?php echo $cidade; ?>" onkeypress="digito('cidade');" onkeydown="digito('cidade');">
 		</div>
 	</div>
 	<div style="float:left;">
 		<label>Estado</label>
 		<div id="estado_div">
-			<input type="text" maxlength="200" name="estado"  id="estado" value="<?php echo $email; ?>" onkeypress="digito('estado');" onkeydown="digito('estado');">
+			<input type="text" maxlength="2" name="estado"  id="estado" value="<?php echo $email; ?>" onkeypress="digito('estado');" onkeydown="digito('estado');">
 		</div>
 	</div>
 	<div style="float:left;">
 		<label>CPF</label>
-		<div id="estado_div">
-			<input type="text" maxlength="200" name="cpf"  id="cpf" value="<?php echo @$cpf; ?>" onkeypress="digito('cpf');" onkeydown="digito('cpf');">
+		<div id="cpf_div">
+			
+			<input type="text" maxlength="14" name="cpf"  id="cpf" value="<?php echo @$cpf; ?>" onkeypress="digito('cpf');" onkeydown="digito('cpf');">
 		</div>
 	</div>
 	
    <br style="clear:both;"/>
-   
+   <script type="text/javascript">
+	$(document).ready(function () { 
+        var $seuCampoCpf = $("#cpf");
+        $seuCampoCpf.mask('000.000.000-00', {reverse: true});
+    });
+	</script>
  
    
    <div style="float:left;margin-top:29px;">
